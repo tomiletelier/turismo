@@ -4,20 +4,57 @@ import viteLogo from '/vite.svg'
 import Logo from './Logo' 
 import { AiFillAlipayCircle } from "react-icons/ai";
 import Button from './Button';
-import { MdLocationOn } from "react-icons/md";
+import { MdDescription, MdLocationOn } from "react-icons/md";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import Parque from './Parque1';
 import SocialButton from './SocialMedia';
 import Trochita from './Trochita1';
+import Evento from './Evento';
+import Fondo from './Fondo';
+
+
+
+
 
 function App(){
   const lista=["Inicio",   "¿Como llegar?",    "¿Que hacer?",   "Guia de alojamiento"]
   const listItems=lista.map(item => <Button text={item} />)
+  const listEventos = [
+{
+fecha: "22/9",
+hora: "15:00hs",
+lugar: "Esquel",
+descripcion: "banda de musica",
+},
+{
+fecha: "22/9",
+hora: "15:00hs",
+lugar: "Esquel",
+descripcion: "banda de musica",
+},
+{
+fecha: "22/9",
+hora: "15:00hs",
+lugar: "Esquel",
+descripcion: "banda de musica",
+},
+{
+fecha: "22/9",
+hora: "15:00hs",
+lugar: "Esquel",
+descripcion: "banda de musica",
+}
+]
+
+const eventosMap = listEventos.map(evento =>
+    <Evento evento={evento} />
+)
 
   return(
-    <>
-  
-    <header className='flex items-center bg-amber-200'>
+    <div className='bg-[url(./assets/zeta2.jpg)] bg-no-repeat bg-cover bg-blue-950/50'>
+
+
+    <header className='flex items-center justify-center'>
            <Logo /> 
         <ul className='flex gap-5 justify-center w-2/3'>
 
@@ -42,13 +79,20 @@ function App(){
 
         <Parque />
 
+ <div>
 
+  {eventosMap}
+
+ </div>
    <SocialButton  />
 
-     </>
-)
+     </div>
+  ) 
 
-}
+  }
+
+
+
 
 
 export default App;
