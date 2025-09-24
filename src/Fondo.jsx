@@ -1,4 +1,4 @@
-import fondo from "./assets/zeta2.jpg"
+import fondo from "./assets/zeta3.png"
 
 export default function Fondo()
 

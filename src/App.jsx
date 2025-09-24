@@ -11,8 +11,8 @@ import SocialButton from './SocialMedia';
 import Trochita from './Trochita1';
 import Evento from './Evento';
 import Fondo from './Fondo';
-
-
+import SplitText from "./assets/SplitText";
+import CircularGallery from './CircularGallery'
 
 
 
@@ -45,13 +45,16 @@ lugar: "Esquel",
 descripcion: "banda de musica",
 }
 ]
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 const eventosMap = listEventos.map(evento =>
     <Evento evento={evento} />
 )
 
   return(
-    <div className='bg-[url(./assets/zeta2.jpg)] bg-no-repeat bg-cover bg-blue-950/50'>
+    <div className='bg-[url(./assets/zeta3.png)] bg-no-repeat bg-cover bg-blue-950/50'>
 
 
     <header className='flex items-center justify-center'>
@@ -67,17 +70,65 @@ const eventosMap = listEventos.map(evento =>
     </header>
   
     
-      <h1 className='text-center text-pink-500 text-3xl p-5 m-5'>LA TROCHITA </h1>
+  
+  <SplitText className='justify-center'
+  text="LA TROCHITA"
+  className="text-5xl text-white text-center"
+  delay={200}
+  duration={1.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
 
-       <p className='justify-baseline'>Sentí lo épico de viajar por nuestra historia, nuestra cultura y nuestros paisajes, en un recorriendo de más de 40 kilómetros.</p>
+<br/>
+      <SplitText className='mt-5 p-4 m-10'
+  text="Sentí lo épico de viajar por nuestra historia, nuestra cultura y nuestros paisajes, en un recorrido de más de 40 kilómetros"
+  className="text-1xl text-red-600 text-center"
+  delay={10}
+  duration={1.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
 
-      <Trochita />
+<div style={{ height: '500px', position: 'relative' }}>
+  <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
+</div>
 
-     
 
-        <h1 className='text-center text-pink-500 text-3xl p-1'>PARQUE NACIONAL LOS ALERCES</h1>
 
-        <Parque />
+<SplitText
+  text="BIENVENIDOS A ESQUEL"
+  className="text-8xl text-white font-semibold text-center"
+  delay={100}
+  duration={0.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
+
+
+
+
+<h1 className='text-center text-pink-500 text-3xl p-1'>PARQUE NACIONAL LOS ALERCES</h1>
+
+   <Parque />
 
  <div>
 
@@ -90,9 +141,6 @@ const eventosMap = listEventos.map(evento =>
   ) 
 
   }
-
-
-
 
 
 export default App;
