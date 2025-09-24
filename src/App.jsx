@@ -70,10 +70,14 @@ const eventosMap = listEventos.map(evento =>
     </header>
   
     
+
+
+<div className='text-center'>
+
   
-  <SplitText className='justify-center'
+  <SplitText
   text="LA TROCHITA"
-  className="text-5xl text-white text-center"
+  className="text-5xl text-red-800 text-center"
   delay={200}
   duration={1.6}
   ease="power3.out"
@@ -86,8 +90,11 @@ const eventosMap = listEventos.map(evento =>
   onLetterAnimationComplete={handleAnimationComplete}
 />
 
+</div>
+
+
 <br/>
-      <SplitText className='mt-5 p-4 m-10'
+      <SplitText className='mt-5 p-4 m-5'
   text="Sentí lo épico de viajar por nuestra historia, nuestra cultura y nuestros paisajes, en un recorrido de más de 40 kilómetros"
   className="text-1xl text-red-600 text-center"
   delay={10}
@@ -105,24 +112,6 @@ const eventosMap = listEventos.map(evento =>
 <div style={{ height: '500px', position: 'relative' }}>
   <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
 </div>
-
-
-
-<SplitText
-  text="BIENVENIDOS A ESQUEL"
-  className="text-8xl text-white font-semibold text-center"
-  delay={100}
-  duration={0.6}
-  ease="power3.out"
-  splitType="chars"
-  from={{ opacity: 0, y: 40 }}
-  to={{ opacity: 1, y: 0 }}
-  threshold={0.1}
-  rootMargin="-100px"
-  textAlign="center"
-  onLetterAnimationComplete={handleAnimationComplete}
-/>
-
 
 
 
