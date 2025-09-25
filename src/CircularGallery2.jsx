@@ -332,18 +332,17 @@ class App {
   }
   createMedias(items, bend = 0, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://scontent.fcrd6-1.fna.fbcdn.net/v/t39.30808-6/481071041_1048917947262187_7816042998873091373_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-2OMxLrAJ_EQ7kNvwEGFbvp&_nc_oc=AdnpZaSMHDm0wNv0PNPsEo-TDHapYKQ5QmaHs7ABvJUSXLM_8Q5i2BVXRztDGx2m08A&_nc_zt=23&_nc_ht=scontent.fcrd6-1.fna&_nc_gid=8iqqwGdcnxoh4NdKs6QR_g&oh=00_Afapbmy0eWPOjT4QTBlyhLbOLqSYnDln0aPJT4VlUvvRrg&oe=68D8DBA1`, text: '' },
-      { image: `https://www.rionegro.com.ar/wp-content/uploads/2025/05/0000-la-trochita.jpg?resize=470,720`, text: '' },
-      { image: `https://media-cdn.tripadvisor.com/media/photo-s/0f/1f/4a/94/camino-a-esquel-foto.jpg`, text: '' },
-      { image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/99/5b/67/tren-la-trochita-en-paseo.jpg?w=1200&h=-1&s=1`, text: '' },
-      { image: `https://latrochitaweb.wordpress.com/wp-content/uploads/2013/03/dscn3520.jpg`, text: '' },
-      { image: `https://fmdellagoesquel.com.ar/wp-content/uploads/2022/05/La-Trochita-con-rio-negro.jpg`, text: '' },
-      { image: `https://radio3cadenapatagonia.com.ar/wp-content/uploads/2023/03/294066646_5546703078684002_5800176243791875823_n.jpg`, text: '' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: '' },
+      { image: `https://cdn.prod.website-files.com/65427dfb633f6663bd71739d/663556af8b4f44147f3d268d_Parque-naciona-alerces-.jpeg`, text: '' },
+      { image: `https://scontent.fcrd6-1.fna.fbcdn.net/v/t1.6435-9/126484842_3598588230201184_1878643859511996415_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vsF2YlOqOigQ7kNvwHq9hxa&_nc_oc=AdmVYrZOctOW_rnBO80f8n1uBSb1FoizyV8SbFmwkXbw1xmDd_D2HJ9svPTEPCVVklo&_nc_zt=23&_nc_ht=scontent.fcrd6-1.fna&_nc_gid=0WpyHhRqHOVZl3bvRnrIGQ&oh=00_AfZzfMLBFbw8YJG7ngmPB4itc6TY4er8TOf1VahE6Ihm8w&oe=68FBEE5E`, text: '' },
+      { image: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lago_Cisne_-_Parque_Nacional_Los_Alerces_-_Chubut_-_Argentina_-_panoramio.jpg/500px-Lago_Cisne_-_Parque_Nacional_Los_Alerces_-_Chubut_-_Argentina_-_panoramio.jpg`, text: '' },
+      { image: `https://pbs.twimg.com/media/ELSQcPwXYAAD8z5.jpg`, text: '' },
+      { image: `https://cdn.prod.rexby.com/image/a408dac6eb7c4b6597243f60aaf65348?format=webp&width=1080&height=1350`, text: '' },
+      { image: `https://live.staticflickr.com/666/22965218614_ec734d5539_z.jpg`, text: '' },
+      { image: `https://cabaa-con-bajada-al-lago-futalaufquen.hotelesenpatagonia.com/data/Images/OriginalPhoto/12055/1205549/1205549284/image-esquel-cabana-en-la-costa-del-lago-futalaufquen-parque-nacional-los-alerces-28.JPEG`, text: '' },
+      { image: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sendero_al_Rodal_Parque_Nacional_Alerce_Andino.jpg/250px-Sendero_al_Rodal_Parque_Nacional_Alerce_Andino.jpg`, text: '' },
+      { image: `https://thumbs.dreamstime.com/b/bosques-de-los-alerces-parque-nacional-chubut-argentina-escena-del-paisaje-forestal-d%C3%ADa-verano-en-el-borde-lago-patrimonio-369509906.jpg`, text: '' },
       { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: '' }
+      { image: `https://pbs.twimg.com/media/Eq5CiatXEAAM0tj.jpg`, text: '' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
