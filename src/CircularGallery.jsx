@@ -336,14 +336,12 @@ class App {
       { image: `https://www.rionegro.com.ar/wp-content/uploads/2025/05/0000-la-trochita.jpg?resize=470,720`, text: '' },
       { image: `https://media-cdn.tripadvisor.com/media/photo-s/0f/1f/4a/94/camino-a-esquel-foto.jpg`, text: '' },
       { image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/99/5b/67/tren-la-trochita-en-paseo.jpg?w=1200&h=-1&s=1`, text: '' },
-      { image: `https://latrochitaweb.wordpress.com/wp-content/uploads/2013/03/dscn3520.jpg`, text: '' },
-      { image: `https://fmdellagoesquel.com.ar/wp-content/uploads/2022/05/La-Trochita-con-rio-negro.jpg`, text: '' },
-      { image: `https://radio3cadenapatagonia.com.ar/wp-content/uploads/2023/03/294066646_5546703078684002_5800176243791875823_n.jpg`, text: '' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: '' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: '' }
+      { image: `https://media-cdn.tripadvisor.com/media/photo-s/09/0c/9e/8c/la-trochita-viejo-expreso.jpg`, text: '' },
+      { image: `https://eqsnotas-assets.tadevel-cdn.com/64c3e311a4ccf894ee4f5fcd/720.jpeg`, text: '' },
+      { image: `https://pbs.twimg.com/media/CJj9VRbWsAA6jeG.jpg`, text: '' },
+      { image: `https://eqsnotas-assets.tadevel-cdn.com/6478b766d3bbee3a7f0d859b/720.jpeg`, text: '' },
+      { image: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Provincia_del_Chubut_-_Esquel_-_Trochita.jpg/250px-Provincia_del_Chubut_-_Esquel_-_Trochita.jpg`, text: '' },
+      { image: `https://stories.infobae.com/wp-content/uploads/2025/02/cropped-Firefly-20250205085434.png`, text: '' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

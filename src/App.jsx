@@ -15,6 +15,8 @@ import SplitText from "./assets/SplitText";
 import CircularGallery from './CircularGallery'
 import CircularGallery2 from './CircularGallery2';
   import {Link, Route, Routes} from 'react-router'
+import ComprarTickets from './ComprarTickets.jsx'
+
 
 
 
@@ -66,9 +68,14 @@ const eventosMap = listEventos.map(evento =>
 
       {listItems}
           
+
+  <a href='https://maps.app.goo.gl/pGcLtFVQSBDQbYam8'>
               <MdLocationOn className='h-12 w-13 hover:text-amber-700'/>
-          
+  </a>
+
+     <a href='https://www.accuweather.com/es/ar/esquel/8244/daily-weather-forecast/8244'>
             <TiWeatherPartlySunny className='h-12 w-13 hover:text-amber-700'/>
+            </a>
           </ul>
     </header>
   
@@ -78,7 +85,7 @@ const eventosMap = listEventos.map(evento =>
   
   <SplitText
   text="LA TROCHITA"
-  className="text-5xl text-red-800 text-center"
+  className="text-5xl md-5 text-red-800 text-center"
   delay={300}
   duration={1.6}
   ease="power3.out"
@@ -91,9 +98,9 @@ const eventosMap = listEventos.map(evento =>
   onLetterAnimationComplete={handleAnimationComplete}
 />
 
+
 </div>
 
-<br/>
 <div className='text-center bg-amber-700'>
 
       <SplitText className='mt-1 p-1 m-1 text-center'
@@ -112,7 +119,18 @@ const eventosMap = listEventos.map(evento =>
 />
 </div>
 
-<div style={{ height: '500px', position: 'relative' }}>
+
+
+
+<ComprarTickets />
+
+
+
+
+
+
+
+<div style={{ height: '500px', position: 'relative'}}>
   <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.02} scrollEase={0.02}/>
 </div>
 
@@ -135,7 +153,7 @@ const eventosMap = listEventos.map(evento =>
 />
 </div>
 
-<div className='text-center bg-amber-700'>
+<div className='text-center bg-green-300'>
 
   <SplitText
   text="En sus 259.822 hectáreas encierra algunos de los paisajes más bellos de la región."
@@ -153,26 +171,41 @@ const eventosMap = listEventos.map(evento =>
 />
 </div>
 
-
-
-
-
-
 <div style={{ height: '500px', position: 'relative' }}>
   <CircularGallery2 bend={0} textColor="#ffffff" borderRadius={0.02} scrollEase={0.02}/>
 </div>
-
-
  <div>
 
   {eventosMap}
 
+
  </div>
-   <SocialButton  />
+     <div className='flex justify-center '>
 
-     </div>
-  ) 
+  <SplitText
+  text="¡SEGUINOS EN NUESTRAS REDES SOCIALES!"
+  className="text-4xl text-green-800 mb-4 text-center"
+  delay={70}
+  duration={1.0}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+/>
+</div>
 
-  }
+
+
+   <SocialButton />
+   <br />
+   
+
+ </div>
+
+) 
+}
 
 export default App;
